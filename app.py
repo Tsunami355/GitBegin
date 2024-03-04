@@ -3,8 +3,7 @@ parser = argparse.ArgumentParser(description='Calculator')
 
 parser.add_argument('num1', type=float, help='First number')
 parser.add_argument('num2', type=float, help='Second number')
-parser.add_argument('op', choices=["+", "-", "*"], help='Operation')
-parser.add_argument('op', choices=["+", "-", "/"], help='Operation')
+parser.add_argument('op', choices=["+", "-", "*", "/"], help='Operation')
 
 args = parser.parse_args()
 
